@@ -1,0 +1,128 @@
+/*Exercício 1*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner (System.in);
+int nota = 0, notaexame = 0, ra, nota1=0, nota2=0, nota3=0, totalnota=0;
+ int i = 0;
+ while(i<3){ 
+ 
+ System.out.println("Digite o seu RA:");
+ ra = leia.nextInt(); 
+ System.out.println("Digite a " + (i + 1) + " nota do aluno:");
+ nota1 = leia.nextInt();
+ System.out.println("Digite a " + (i + 2) + " nota do aluno:");
+ nota2 = leia.nextInt();
+ System.out.println("Digite a " + (i + 3) + " nota do aluno:");
+ nota3 = leia.nextInt(); 
+ i = i+1;
+ totalnota= nota1+nota2+nota3/3;
+ if (ra <= 0){
+ System.out.println("RA NEGATIVO. IMPOSSÍVEL CONTINUAR!");
+ }
+ else if (totalnota>=70){
+ System.out.println("A média do aluno " +ra+ " é de: " +totalnota);
+ System.out.println("PARABÉNS! APROVADO!");
+ }
+ else if (totalnota>60 && totalnota<70){
+ System.out.println("EXAME.");
+ }
+ 
+ else 
+ System.out.println("REPROVADO!");
+ }
+}
+}
+/*Exercício 2*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner (System.in);
+ int i50=0, mediaidade, totalidade=0, idade = 0;
+ int i=1;
+ while(i<=3){
+ 
+ System.out.println("Digite a idade da pessoa:");
+ idade = leia.nextInt();
+ i++;
+ if(idade>=50){
+ i50++;
+ }
+ else if(idade<=0){
+ System.out.println("Valor inválido!");
+ }
+ totalidade = totalidade+idade;
+ }
+ mediaidade = totalidade/3;
+ System.out.println("A media é de: " + mediaidade);
+ System.out.println(i50+ " pessoa tem + de 50 anos");
+ }
+}
+/*Exercício 3*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner (System.in);
+ int ra, nota1, nota2, nota3, media;
+ int i = 0;
+ while(i<=3){
+ i++;
+ System.out.println("Digite o RA;");
+ ra= leia.nextInt();
+ if(ra<=0){
+ System.out.println("RA NEGATIVO. FIM DO PROGRAMA.");
+ }
+ else if(ra>0){
+ System.out.println("Digite a primeira nota:");
+ nota1 = leia.nextInt();
+ System.out.println("Digite a segunda nota:");
+ nota2 = leia.nextInt();
+ System.out.println("Digite a terceira nota:");
+ nota3 = leia.nextInt();
+ media = (nota1+nota2+nota3)/3;
+ 
+ if(ra<=0){
+ System.out.println("RA NEGATIVO. FIM DO PROGRAMA.");
+ }
+ else if(media>=70){
+ System.out.println("APROVADO!");
+ }
+ else if(media>=60 && media<70){
+ System.out.println("EXAME.");
+ }
+ else if(media<60){
+ System.out.println("REPROVADO!");
+ }
+ else if(nota1<0 || nota2<0 || nota3<0){
+ System.out.println("VALOR INVÁLIDO!");
+ 
+ }
+ }
+ }
+ }
+}
+/*Exercício 4*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner (System.in);
+ int salario = 0, numFilho = 0, mediafilho = 0, mediasalario = 0, mediafilhox, mediasalariox;
+ int i=1;
+ while(i<=3){
+ i++;
+ System.out.println("Digite o seu salário:");
+ salario= leia.nextInt();
+ if(salario<=0){
+ System.out.println("Salário inválido. Fim do programa.");
+ i=i-1; 
+ }
+ System.out.println("Digite quantos filhos são:");
+ numFilho = leia.nextInt();
+ mediafilho = mediafilho+numFilho;
+ mediasalario = mediasalario+salario;
+ }
+ }
