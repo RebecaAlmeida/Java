@@ -1,0 +1,285 @@
+/*Exercício 1*/
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ double n1, n2, n3, resul;
+ System.out.println("Declare o número 1:");
+ n1 = leia.nextDouble();
+ System.out.println("Declare o número 2:");
+ n2 = leia.nextDouble();
+ System.out.println("Declare o número 3:");
+ n3 = leia.nextDouble();
+ resul = n1*n2*n3/3;
+ System.out.println("A média é : " + resul);
+ }
+}
+/*Exercício 2*/
+import java.util.Scanner;
+public class Main {
+ public static void main(String[] args) {
+Scanner leia = new Scanner(System.in);
+ int anoAtual, anoNascimento, idade, idade2050;
+ 
+ System.out.println("Digite seu ano de nascimento: ");
+ anoNascimento = leia.nextInt();
+ System.out.println("Digite o ano atual: ");
+ anoAtual = leia.nextInt();
+ 
+ idade = anoAtual-anoNascimento;
+ idade2050 = 2050-anoNascimento;
+ System.out.println("Sua idade no ano atual: " +idade);
+ System.out.println("Sua idade no ano de 2050 será: " +idade2050);
+ }
+}
+/*Exercício 3*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner(System.in);
+ double dolar, real, resul;
+ System.out.println("Escreva o valor do dólar: ");
+ dolar = leia.nextDouble();
+ System.out.println("Qual é a cotação do real? ");
+ real = leia.nextDouble();
+ resul = dolar*real;
+ System.out.println("Você tem " + resul + " reais.");
+ }
+}
+/*Exercício 4*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner ( System.in);
+ 
+ double diagonalmaior, diagonalmenor, area;
+ 
+ System.out.println("Digite o valor da diagonal maior: ");
+ diagonalmaior = leia.nextDouble();
+ System.out.println("Digite o valor da diagonal menor:");
+ diagonalmenor = leia.nextDouble();
+ area = (diagonalmaior*diagonalmenor)/2;
+ System.out.println("Área é igual a: " +area);
+ }
+}
+/*Exercício 5*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ 
+ double c, fahrenheit;
+ 
+ System.out.println("Digite a temperatura em Celsius: ");
+ c = leia.nextDouble();
+ fahrenheit = (c*1.8) + 32;
+ System.out.println("Essa temperatura em Fahrenheit é: " + fahrenheit);
+ }
+}
+/*Exercício 6*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ double a, b, c, delta, x1, x2;
+ 
+ System.out.println("Dê o valor de A: ");
+ a = leia.nextDouble();
+ System.out.println("Dê o valor de B: ");
+ b = leia.nextDouble();
+ System.out.println("Dê o valor de C: ");
+ c = leia.nextDouble();
+ 
+ delta = b*b-4*a*c;
+ 
+ if(delta>=0){
+ x1 = (b + Math.sqrt(delta))/(2*a);
+ x2 = (b - Math.sqrt(delta))/(2*a);
+ 
+ System.out.println("x1 = " + x1);
+ System.out.println("x2 = " + x2);
+ }
+ else 
+ System.out.println("Não é possível calcular! Delta menor ou igual a zero.");
+ }
+}
+/*Exercício 7*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ 
+ float sm, sf, resul;
+ 
+ System.out.println("Quanto é o salário mínimo: ");
+ sm = leia.nextFloat();
+ System.out.println("Qual o salário do funcionário: ");
+ sf = leia.nextFloat();
+ resul = sf/sm;
+ System.out.println("Ele recebe " + resul + " salários mínimos.");
+}
+}
+/*Exercício 8*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner(System.in);
+ int m,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10;
+ 
+ System.out.print("Digite o número a ser multiplicado: ");
+ m = leia.nextInt();
+ m1 = m*1;
+ m2 = m*2;
+ m3 = m*3;
+ m4 = m*4;
+ m5 = m*5;
+ m6 = m*6;
+ m7 = m*7;
+ m8 = m*8;
+ m9 = m*9;
+ m10 = m*10;
+ 
+ System.out.println("Multiplicado por 1 : " +m1);
+ System.out.println("Multiplicado por 2 : " +m2);
+ System.out.println("Multiplicado por 3 : " +m3);
+ System.out.println("Multiplicado por 4 : " +m4);
+ System.out.println("Multiplicado por 5 : " +m5);
+ System.out.println("Multiplicado por 6 : " +m6);
+ System.out.println("Multiplicado por 7 : " +m7);
+ System.out.println("Multiplicado por 8 : " +m8);
+ System.out.println("Multiplicado por 9 : " +m9);
+ System.out.println("Multiplicado por 10 : " +m10);
+}
+}
+/*Exercício 9*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ 
+ double n, resul1, resul2, resul3, resul4, rz1, rz2;
+ 
+ System.out.print("Declare um número positivo: ");
+ n = leia.nextDouble();
+ resul1 = n*n;
+ resul2= n*n*n;
+ resul3 = Math.sqrt(n);
+ resul4 = Math.cbrt(n);
+ 
+ System.out.println("Seu número ao quadrado : " + resul1);
+ System.out.println("Seu número ao cubo : " + resul2);
+ System.out.println("Sua raiz quadrada : " + resul3);
+ System.out.println("Sua raiz : " + resul4);
+}
+}
+/*Exercício 10*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ int valor, porcentagem, resul;
+ 
+ System.out.print("Declare o valor gasto do cliente: ");
+ valor = leia.nextInt();
+ System.out.print("Declare a porcentagem de gorjeta: ");
+ porcentagem = leia.nextInt();
+ resul= (porcentagem*valor)/100;
+ System.out.print("O valor da gorjeta é de " + resul + " reais.");
+}
+}
+/*Exercício 11*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ 
+ int numero, antecessor, sucessor, dobro, metade;
+ 
+ System.out.print("Declare o número inteiro : ");
+ numero = leia.nextInt();
+ antecessor = numero-1;
+ System.out.println("O antecessor é : " + antecessor);
+ sucessor = numero+1;
+ System.out.println("O seu sucessor é : " + sucessor);
+ dobro = numero*2;
+ System.out.println("O seu dobro é : " + dobro);
+ metade = numero/2;
+ System.out.println("A sua metade é : " + metade);
+}
+}
+/*Exercício 12*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ double altura, resul;
+ 
+ System.out.print("Declare a altura da pessoa: ");
+ altura = leia.nextDouble();
+ resul= (72.7*altura)-58;
+ System.out.print("O peso ideal é de: " + resul);
+}
+}
+/*Exercício 13*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ 
+ double altura,resul;
+ System.out.print("Declare a altura da pessoa: ");
+ altura = leia.nextDouble();
+ resul= (62.1*altura)-44.7;
+ System.out.print("O peso ideal é: " +resul);
+}
+}
+/*Exercício 14*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ int a,b,resul1,resul2;
+ System.out.print("Declare o valor de A: ");
+ a = leia.nextInt();
+ System.out.print("Declare o valor de B: ");
+ b = leia.nextInt();
+ System.out.println("A é: " + b);
+ System.out.println("B é: " + a);
+}
+}
+/*Exercício 15*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner(System.in);
+ int candidato1, candidato2, eleitores, votos2, votosn, percentual, percentual2, percentual3;
+ 
+ System.out.print("Declare o número de eleitores: ");
+ eleitores = leia.nextInt();
+ System.out.print("Declare os votos no 1° candidato: ");
+ candidato1 = leia.nextInt();
+ System.out.print("Declare os votos no 2° candidato: ");
+ candidato2 = leia.nextInt();
+ votosn = eleitores-candidato1-candidato2;
+ System.out.println("O total de votos nulos são: " + votosn);
+ percentual = candidato1*100/eleitores;
+ System.out.println("A porcentagem de votos no 1° candidato é de: " + percentual + "%");
+ percentual2 = candidato2*100/eleitores;
+ System.out.println("A porcentagem de votos do 2° candidato é de: " + percentual2 + "%");
+ percentual3 = votosn*100/eleitores;
+ System.out.println("A porcentagem de votos nulos é de: " + percentual3 + "%");
+}
+}
