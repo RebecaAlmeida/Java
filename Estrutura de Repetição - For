@@ -1,0 +1,130 @@
+/*Exercício 1*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+Scanner leia = new Scanner (System.in);
+int num = 0,dobro = 0,dobro1;
+ for(int i=1; i<=5;i= i++){
+ System.out.print("Digite o " +(i++)+ " valor: ");
+ num= leia.nextInt();
+ System.out.println("O seu dobro é: "+num*2);
+ }
+}
+}
+/*Exercício 2*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+ for(int i=1;i<=10;i++){
+ if(i%2!=0)
+ System.out.println(i);
+ 
+ }
+}
+}
+/*Exercício 3*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+ int num, x=1;
+ System.out.println("Declare o número: ");
+ num = leia.nextInt(); 
+ for(x=1; x<=10; x++){
+ System.out.println(num+ " x " +x+ " = " +num*x );
+ }
+}
+}
+/*Exercício 4*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+ int temp = 1,media = 0,mediax = 0;
+ int i;
+ for(i=1; i<=10;i++){
+ System.out.println("Digite a temperatura do " +(i) + "º dia: " );
+ temp = leia.nextInt();
+ media= media+temp;
+ mediax = media/3;
+ 
+ System.out.println("A média da temperatura foi de: " +mediax);
+ }
+}
+}
+/*Exercício 5*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+ 
+ int homem = 0, mulher = 0, peso, pesoH=0, pesoM=0;
+ String sexo;
+ for(int i=1; i<=10;i++){
+ System.out.println("Digite o sexo da pessoa: ");
+ sexo = leia.next();
+ System.out.println("Digite o peso da pessoa: ");
+ peso = leia.nextInt();
+ if ((sexo.equals("m")) || (sexo.equals("M")) && (peso>=60 && peso<=80)){
+ homem++; }
+ else if (sexo.equals("f") || (sexo.equals("F")) && (peso>=50 && peso<=70)){
+ mulher++; }
+ }
+ System.out.println("Homens com o peso entre 60kg e 80kg são: " +homem);
+ System.out.println("Mulheres com o peso entre 50kg e 70kg são: " +mulher);
+}
+}
+/*Exercício 6*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+int menor=99999, maior=0, nota;
+ for (int i = 1; i <= 5; i++){
+ System.out.print("Digita a "+(i) + "º nota: ");
+ nota = leia.nextInt();
+ 
+ if (nota<menor){
+ menor = nota;
+ }
+ else if(nota>maior){
+ maior=nota;
+ }
+}
+ System.out.println("A menor nota é: "+menor); 
+ System.out.println("A maior nota é: "+maior);
+ }
+}
+/*Exercício 7*/
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+ Scanner leia = new Scanner (System.in);
+ 
+int idade =0, peso=0, mIdade=0, peso90=0, i, midade2;
+ for(i=1; i<=7;i++){
+ System.out.print("Digite a idade da " + (i) + "º pessoa: ");
+ idade = leia.nextInt(); 
+ System.out.print("Digite o peso: ");
+ peso= leia.nextInt();
+ if(peso>90){
+ peso90++;}
+ mIdade = mIdade+idade;
+ }
+ midade2 = mIdade/2;
+ System.out.println("Média das idade são: " +midade2);
+ System.out.println("O total de pessoas acima de 90kg são: " +peso90);
+ }
